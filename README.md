@@ -42,6 +42,10 @@ dependencias:
 
 ![alt text](image-2.png)
 
+configuracion:
+
+![alt text](image-14.png)
+
 anotaciones:
 
 ![alt text](image-8.png)
@@ -57,8 +61,16 @@ extendemos BlueprintsPersistence
 
 completamos los métodos getBlueprint y getBlueprintsByAuthor:
 
-![alt text](image-11.png)
+![alt text](image-13.png)
 
 agregamos pruebas:
 
 ![alt text](image-12.png)
+![alt text](image-11.png)
+
+### 3 
+
+Hacemos un programa en el que cree (mediante Spring) una instancia de BlueprintServices, y rectifique la funcionalidad del mismo.
+
+![alt text](image-15.png)
+

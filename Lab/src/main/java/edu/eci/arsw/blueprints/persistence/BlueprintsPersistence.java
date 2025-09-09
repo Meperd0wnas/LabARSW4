@@ -8,6 +8,9 @@ package edu.eci.arsw.blueprints.persistence;
 import edu.eci.arsw.blueprints.model.Blueprint;
 import java.util.Set;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public interface BlueprintsPersistence {
 
     public void saveBlueprint(Blueprint bp) throws BlueprintPersistenceException;
