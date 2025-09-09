@@ -50,3 +50,15 @@ anotaciones:
 
 
 #### 2
+
+extendemos BlueprintsPersistence
+
+![alt text](image-10.png)
+
+completamos los métodos getBlueprint y getBlueprintsByAuthor:
+
+![alt text](image-11.png)
+
+agregamos pruebas:
+
+![alt text](image-12.png)

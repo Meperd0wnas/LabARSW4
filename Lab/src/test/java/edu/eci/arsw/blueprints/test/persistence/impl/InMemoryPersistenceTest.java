@@ -67,6 +67,35 @@ public class InMemoryPersistenceTest {
         
     }
 
+        @Test
+    public void getBlueprintsByAuthorTest() throws BlueprintPersistenceException, BlueprintNotFoundException {
+        InMemoryBlueprintPersistence ibpp = new InMemoryBlueprintPersistence();
+
+        // Crear planos de un mismo autor
+        Point[] pts1 = new Point[]{new Point(0, 0), new Point(10, 10)};
+        Blueprint bp1 = new Blueprint("alice", "paint1", pts1);
+        ibpp.saveBlueprint(bp1);
+
+        Point[] pts2 = new Point[]{new Point(5, 5), new Point(15, 15)};
+        Blueprint bp2 = new Blueprint("alice", "paint2", pts2);
+        ibpp.saveBlueprint(bp2);
+
+        // Crear plano de otro autor
+        Point[] pts3 = new Point[]{new Point(20, 20), new Point(30, 30)};
+        Blueprint bp3 = new Blueprint("bob", "paint3", pts3);
+        ibpp.saveBlueprint(bp3);
+
+        // Recuperar los de "alice"
+        assertEquals("El autor alice debería tener 2 planos guardados",
+                2, ibpp.getBlueprintsByAuthor("alice").size());
+
+        assertTrue("El conjunto debería contener el plano paint1",
+                ibpp.getBlueprintsByAuthor("alice").contains(bp1));
+
+        assertTrue("El conjunto debería contener el plano paint2",
+                ibpp.getBlueprintsByAuthor("alice").contains(bp2));
+    }
+
 
     
 }
