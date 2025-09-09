@@ -23,3 +23,13 @@ y Con @Qualifier("englishChecker") resolvemos el conflicto entre EnglishSpellChe
 programa de prueba y salida 
 
 ![alt text](image-3.png)
+
+### 5
+
+ajustamos 
+
+![alt text](image-4.png)
+
+probamos
+
+![alt text](image-5.png)
