@@ -16,7 +16,7 @@
 Con @Service, Spring detecta este bean gracias al component-scan,con @Autowired Spring inyecta la dependencia.
 y Con @Qualifier("englishChecker") resolvemos el conflicto entre EnglishSpellChecker y SpanishSpellChecker.
 
-![alt text](image-2.png)
+![alt text](image-6.png)
 
 ### 4 
 
