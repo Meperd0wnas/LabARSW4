@@ -74,3 +74,24 @@ Hacemos un programa en el que cree (mediante Spring) una instancia de BlueprintS
 
 ![alt text](image-15.png)
 
+### 4
+
+creamos la abstraccion
+
+![alt text](image-16.png)
+
+filtro de redundancia:
+
+![alt text](image-17.png)
+
+filtrao de submuestreo:
+
+![alt text](image-18.png)
+
+Ajustamos BlueprintsServices para que use un filtro
+
+![alt text](image-19.png)
+
+configuramos un filtro:
+
+![alt text](image-20.png)
