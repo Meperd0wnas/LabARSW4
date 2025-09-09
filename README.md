@@ -95,3 +95,12 @@ Ajustamos BlueprintsServices para que use un filtro
 configuramos un filtro:
 
 ![alt text](image-20.png)
+
+### 5 
+
+agregamos las pruebas
+
+![alt text](image-21.png)
+
+![alt text](image-22.png)
+
