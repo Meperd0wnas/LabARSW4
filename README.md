@@ -2,3 +2,8 @@
 
 ## Daniel Ricardo Ruge Gomez
 ### Taller
+
+### 1
+
+ ![alt text](image.png)
+
