@@ -1,7 +1,6 @@
 package edu.eci.arsw.springdemo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -14,10 +13,7 @@ public class GrammarChecker {
     @Qualifier("englishChecker")  
     private SpellChecker sc;
 
-    public String check(String text){
-        StringBuilder sb = new StringBuilder();
-        sb.append("Spell checking output: ").append(sc.checkSpell(text));
-        sb.append("\nPlagiarism checking output: Not available yet");
-        return sb.toString();
+    public String check(String text) {
+        return "Grammar check result: " + sc.checkSpell(text);
     }
 }
